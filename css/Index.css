@@ -109,17 +109,18 @@ header {
 .beneficio img{
     width: 60px;
     height: 60px;
+    transition: all;
 }
 
 .beneficio h2{
     color: #7a8b63;
     margin: 0;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .beneficio p{
     margin-top: 5px;
-    font-size: 14px;
+    font-size: 13px;
     color: #555;
 }
 
@@ -159,7 +160,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 50px 100px;
+    padding: 100px 100px;
 }
 
 .Missao,
@@ -176,6 +177,7 @@ header {
     height: 190px;
     object-fit: contain;
     flex-shrink: 0;
+    transition: all;
 }
 
 .MissaoText h2,
@@ -192,6 +194,198 @@ header {
     line-height: 1.6;
     color: #555;
 }
+.Valor {
+    background-color: #e6e6e6;
+}
+
+.Valores {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.Nossosvalores h2{
+    padding: 20px;
+    text-align: center;
+    color: #000000;
+    font-size: 20px;
+}
+
+.Card-Valores img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Card-Valores h3 {
+    font-size: 15px;
+    color: #6B7D5D;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.Valores p {
+    color: #000000;
+    font-size: 10px;
+    text-align: center;
+    color: #555;
+    line-height: 1.5;
+}
+
+.Fazemos {
+    background-color: #e6e6e6;
+    display: flex;
+}
+
+.Fazemos h2,h3 {
+    margin-left: 50px;
+}
+
+.Fazemos h2 {
+    color: #7a8b63;
+    font-size: 30px;
+    margin-top: 100px;
+}
+
+.Fazemos h3 {
+    color: #333;
+}
+
+.Fazemos p {
+    color: #333;
+    padding: 5px;
+    margin-left: 100px;
+}
+
+.Fazemos img {
+    width: 600px;
+    height: 400px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 50px;
+    border-radius: 20px;
+
+}
+
+.NossoSite-Texto {
+    width: 100%;
+}
+
+.NossoSite-Texto h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #7a8b63;
+    font-size: 42px;
+}
+
+/* Container dos cards */
+.NossoSite-Texto {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+/* Faz o título ocupar a linha inteira */
+.NossoSite-Texto > h2 {
+    grid-column: 1 / -1;
+}
+
+.card-publico {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.card-publico img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.card-conteudo h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #444;
+    line-height: 1.3;
+}
+
+.card-conteudo p {
+    margin: 0;
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.RetanguloNossoSite {
+    background: #4f6f3d;
+    border-radius: 8px;
+    padding: 20px 30px;
+    margin-top: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.RetanguloNossoSite img {
+    width: 250px;
+    height: auto;
+}
+
+.RetanguloNossoSite h2 {
+    color: white;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.RetanguloNossoSite p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.BotaoNossoSite {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 280px;
+}
+
+.btnExplorarPlantas {
+    background: #ffffff;
+    color: #3b5616;
+    border: 2px solid white;
+    padding: 15px 65px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+}
 
 
-  
+.btnFalarEspecialista {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 15px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+
+
