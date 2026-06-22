@@ -14,7 +14,8 @@ header {
 }
 
 .logo img {
-    width: 120px;
+    width: 100%;
+    max-width: 120px;
     height: auto;
 }
 
@@ -107,7 +108,7 @@ header {
 }
 
 .beneficio img{
-    width: 60px;
+    width: 100%;
     height: 60px;
     transition: all;
 }
@@ -147,11 +148,11 @@ header {
 }
 
 .sobre img {
-    width: 50%;
-    height: 50%;
-    margin-left: 100px;
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    margin-left: 200px;
     border-radius: 20px;
-    position: absolute;
 } 
 
 /* ======= Missao e Visao ======= */
@@ -174,7 +175,8 @@ header {
 .Missao img,
 .Visao img{
     width: 100%;
-    height: 190px;
+    max-width: 200px;
+    height: auto;
     object-fit: contain;
     flex-shrink: 0;
     transition: all;
@@ -217,7 +219,8 @@ header {
 }
 
 .Card-Valores img {
-    width: 60px;
+    width: 100%;
+    max-width: 60px;
     height: 60px;
     object-fit: contain;
     margin-bottom: 15px;
@@ -268,12 +271,12 @@ header {
 }
 
 .Fazemos img {
-    width: 600px;
-    height: 400px;
+    width: 100%;
+    max-width: 550px;
+    height: auto;
     margin-top: 100px;
     margin-bottom: 50px;
-    margin-left: 100px;
-    margin-right: 50px;
+    margin-left: 50px;
     border-radius: 20px;
 
 }
@@ -332,7 +335,7 @@ header {
 .RetanguloNossoSite {
     background: #4f6f3d;
     border-radius: 8px;
-    padding: 20px 30px;
+    padding: 10px 10px;
     margin-top: 80px;
     margin-left: 100px;
     margin-right: 100px;
@@ -342,6 +345,12 @@ header {
     gap: 50px;
 }
 
+.RetanguloTexto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .RetanguloNossoSite img {
     width: 250px;
     height: auto;
@@ -349,13 +358,14 @@ header {
 
 .RetanguloNossoSite h2 {
     color: white;
-    font-size: 38px;
-    margin-bottom: 15px;
+    font-size: 25px;
+    margin: 0;
 }
 
 .RetanguloNossoSite p {
     color: white;
-    font-size: 18px;
+    margin: 0;
+    font-size: 15px;
     line-height: 1.6;
 }
 
@@ -376,6 +386,15 @@ header {
     border-radius: 4px;
 }
 
+.btnExplorarPlantas:hover {
+    background: #949494;
+    color: #fff;
+    border: 2px solid #949494;
+    padding: 15px 65px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+}
 
 .btnFalarEspecialista {
     background: transparent;
@@ -387,5 +406,100 @@ header {
     border-radius: 4px;
 }
 
+.btnFalarEspecialista:hover {
+    background: #949494;
+    color: white;
+    border: 2px solid #949494;
+    padding: 15px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+}
 
+/* ======= RODAPE ======= */
 
+.Rodape {
+    background-color: #e6e6e6;
+    padding: 5px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Rodape img {
+    width: 100px;
+    height: 80px;
+    margin-left: 50px;
+}
+
+.Rodape h2 {
+    color: #555;
+    font-size: 15px;
+    margin-left: 50px;
+}
+
+.inf h3 {
+    color: #7a8b63;
+    font-size: 18px;
+}
+.inf p {
+    color: #555;
+    font-size: 15px;
+}
+.inf a {
+    color: #555;
+    font-size: 15px;
+}
+
+.inf a:hover {
+    color: #949494;
+}
+
+.inf input {
+    background-color: #fff;
+    border-radius: 5px;
+    border-color: #e6e6e6;
+    border-width: 0;
+    padding: 10px 10px;
+}
+
+.inf button {
+    background-color: #7a8b63;
+    border-color: #7a8b63;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border-width: 0;
+    color: #fff;
+}
+
+.inf button:hover {
+    color: #7a8b63; 
+    background-color: #c9c9c9;
+}
+
+.RodapeFim {
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.RodapeFim p {
+    color: #8d8d8d;
+    font-size: 15px;
+    margin: 0;
+}
+
+.RodapeFim {
+    display: flex;
+    gap: 5px;
+}
+
+.RodapeFim a {
+    color: #8d8d8d;
+    text-decoration: none;
+}
+
+.RodapeFim a:hover {
+    color: white;
+}

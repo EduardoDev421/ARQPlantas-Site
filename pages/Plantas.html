@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/Plantas.css">
+    <link rel="stylesheet" href="../css/Plantas.css">
     <title>Plantas</title>
     
 </head>
@@ -12,133 +12,182 @@
 <body>
     <!-- UI: HEADER / TOPO -->
     <header class="header">
+        <div class="logo">
+            <img src="../img/Logo.png" alt="Logo Arq Plantas">
+        </div>
         <nav class="menu">
-            <a href="./pages/IndexSobre.html">Início</a>
-            <a href="./pages/Plantas.html">Plantas</a>
-            <a href="./pages/Profissionais.html">Profissionais</a>
-            <a href="./pages/IndexSobre.html">Sobre</a>
+            <a href="../Index.html">Início</a>
+            <a href="../pages/Plantas.html" class="ativo">Plantas</a>
+            <a href="../pages/Profissionais.html">Profissionais</a>
+            <a href="../Index.html">Sobre</a>
             <a href="./pages/Contato.html">Contato</a>
         </nav>
     </header>
     <main>
-        <section class="Plantas">
-            <img src="./img/Logo.png" alt="Logo Arq Plantas">
-            <h1>Nossas Plantas</h1>
-            <p>Explore nossas coleçao de plantas arquitetonicas
-                e encontre o projeto ideal para voce</p>
+        <section>
+            <div class="titulo-plantas">
+                <div class="texto">
+                    <h1>Nossas Plantas</h1>
+                    <p>Explore nossas coleçao de plantas arquitetonicas <br>
+                        e encontre o projeto ideal para voce</p>
+                </div>
+                <div class="ordenar">
+                    <label for="filtros"> Ordenar por:</label>
 
-            <div class="ordem">
-                <button class="btnOrdem">Ordem por: Mais recentes</button>
-            </div>
-            <div class="filtros-container">
-                <h2>Filtrar por</h2>
-                <h3>Limpar Filtros</h3>
-
-                <div class="filtros">
-                    <h3>Estilo</h3>
-                    <p>Moderno</p>
-                    <p>Contemporâneo</p>
-                    <p>Clássico</p>
-                    <p>Minimalista</p>
-                    <p>Rústico</p>
-                    <h3>Tamanho(m²)</h3>
-                    <p>Até 50m² e 100m²</p>
-                    <p>Até 150m² e 200m²</p>
-                    <p>Até 250m² e 300m²</p>
-                    <p>Até 350m² e 400m²</p>
-                    <p>Até 450m² e 500m²</p>
-                    <h3>Dormitórios</h3>
-                    <p>1</p>
-                    <p>2</p>
-                    <p>3</p>
-                    <p>4+</p>
+                    <select id="filtros">
+                        <option> Mais Recentes</option>
+                        <option> Menor Preço</option>
+                        <option> Maior Preço</option>
+                    </select>
                 </div>
             </div>
 
-            <div class="plantas-container">
-                <div class="planta-card">
-                    <img src="./img/Planta1.png" alt="Planta 1">
-                    <h3>Casa Moderna</h3>
-                    <p>Estilo: Moderno</p>
-                    <p>Tamanho: 120m²</p>
-                    <p>Dormitórios: 3</p>
+            <div class="plantas">
+                <div class="filtro">
+                    <div class="filtro-topo">
+                        <h3>Filtrar por</h3>
+                        <a href="#">Limpar filtros</a>
+                    </div>
+
+                    <div class="grupo">
+                        <h4>Estilo()</h4>
+
+                        <label><input type="checkbox"> Moderno</label>
+                        <label><input type="checkbox"> Contemporâneo</label>
+                        <label><input type="checkbox"> Clássico</label>
+                        <label><input type="checkbox"> Minimalista</label>
+                        <label><input type="checkbox"> Rústico</label>
+                    </div>
+
+                    <div class="grupo">
+                        <h4>Tamanho()</h4>
+
+                        <label><input type="checkbox"> até 100 m²</label>
+                        <label><input type="checkbox"> 100 a 150 m²</label>
+                        <label><input type="checkbox"> 150 a 200 m²</label>
+                        <label><input type="checkbox"> Acima de 200 m²</label>
+                    </div>
+
+                    <div class="grupo">
+                        <h4>Dormitórios ()</h4>
+
+                        <label><input type="checkbox"> 1</label>
+                        <label><input type="checkbox"> 2</label>
+                        <label><input type="checkbox"> 3</label>
+                        <label><input type="checkbox"> 4 ou mais</label>
+                    </div>
                 </div>
 
-                <div class="planta-card">
-                    <img src="./img/Planta2.png" alt="Planta 2">
-                    <h3>Casa Contemporânea</h3>
-                    <p>Estilo: Contemporâneo</p>
-                    <p>Tamanho: 150m²</p>
-                    <p>Dormitórios: 4</p>
-                </div>
+                <div class="plantas-container">
+                    <div class="planta-card">
+                        <img src="./img/Planta1.png" alt="Planta 1">
+                        <h3>Casa Moderna</h3>
+                        <p>Estilo: Moderno</p>
+                        <p>Tamanho: 120m²</p>
+                        <p>Dormitórios: 3</p>
+                        <a href="../pages/DetalhesPlantas.html">
+                            Ver plantas
+                        </a>
+                    </div>
 
-                <div class="planta-card">
-                    <img src="./img/Planta3.png" alt="Planta 3">
-                    <h3>Casa Clássica</h3>
-                    <p>Estilo: Clássico</p>
-                    <p>Tamanho: 200m²</p>
-                    <p>Dormitórios: 5</p>
-                </div>
+                    <div class="planta-card">
+                        <img src="./img/Planta2.png" alt="Planta 2">
+                        <h3>Casa Contemporânea</h3>
+                        <p>Estilo: Contemporâneo</p>
+                        <p>Tamanho: 150m²</p>
+                        <p>Dormitórios: 4</p>
+                        <a href="../pages/DetalhesPlantas.html">
+                            Ver plantas
+                        </a>
+                    </div>
 
-                <div class="planta-card">
-                    <img src="./img/Planta4.png" alt="Planta 4">
-                    <h3>Kitnets</h3>
-                    <p>Estilo: Clássico</p>
-                    <p>Tamanho: 200m²</p>
-                    <p>Dormitórios: 5</p>
-                </div>
+                    <div class="planta-card">
+                        <img src="./img/Planta3.png" alt="Planta 3">
+                        <h3>Casa Clássica</h3>
+                        <p>Estilo: Clássico</p>
+                        <p>Tamanho: 200m²</p>
+                        <p>Dormitórios: 5</p>
+                        <a href="../pages/DetalhesPlantas.html">
+                            Ver plantas
+                        </a>
+                    </div>
 
-                <div class="planta-card">
-                    <img src="./img/Planta5.png" alt="Planta 5">
-                    <h3>Casas Terreas</h3>
-                    <p>Estilo: Clássico</p>
-                    <p>Tamanho: 200m²</p>
-                    <p>Dormitórios: 5</p>
-                </div>
+                    <div class="planta-card">
+                        <img src="./img/Planta4.png" alt="Planta 4">
+                        <h3>Kitnets</h3>
+                        <p>Estilo: Clássico</p>
+                        <p>Tamanho: 200m²</p>
+                        <p>Dormitórios: 5</p>
+                        <a href="../pages/DetalhesPlantas.html">
+                            Ver plantas
+                        </a>
+                    </div>
 
-                <div class="planta-card">
-                    <img src="./img/Planta6.png" alt="Planta 6">
-                    <h3>Terrenos estreitos</h3>
-                    <p>Estilo: Clássico</p>
-                    <p>Tamanho: 200m²</p>
-                    <p>Dormitórios: 5</p>
+                    <div class="planta-card">
+                        <img src="./img/Planta5.png" alt="Planta 5">
+                        <h3>Casas Terreas</h3>
+                        <p>Estilo: Clássico</p>
+                        <p>Tamanho: 200m²</p>
+                        <p>Dormitórios: 5</p>
+                        <a href="../pages/DetalhesPlantas.html">
+                            Ver plantas
+                        </a>
+                    </div>
+
+                    <div class="planta-card">
+                        <img src="./img/Planta6.png" alt="Planta 6">
+                        <h3>Terrenos estreitos</h3>
+                        <p>Estilo: Clássico</p>
+                        <p>Tamanho:  200m²</p>
+                        <p>Dormitórios: 5</p>
+                        <a href="../pages/DetalhesPlantas.html">
+                            Ver plantas
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
         <footer>
-            <img src="./img/RodapeImg.png" alt="Logo Arq Plantas">
-            <h2>Plantas arquitetonicas modernas, funcionais e personalizaveis
-                para transformar seus sonhos
-                em realidade.</h2>
+            <div class="Rodape">
+                <div>
+                    <img src="../img/Logo.png" alt="">
+                    <h2>Plantas arquitetonicas modernas, <br>
+                        funcionais e personalizaveis <br>
+                        para transformar seus sonhos <br>
+                        em realidade.</h2>
+                </div>
+           
+                <div class="inf">
+                    <h3>NAVEGAÇÃO</h3>
+                        <a href="../Index.html">Início</a><br>
+                        <a href="../pages/Plantas.html">Plantas</a><br>
+                        <a href="../pages/Profissionais.html">Profissionais</a><br>
+                        <a href="../Index.html">Sobre</a><br>
+                        <a href="../pages/Contato.html">Contato</a>
+                </div>
 
-            <h3>NAVEGAÇÃO</h3>
-            <p><a href="./pages/IndexSobre.html">Início</a></p>
-            <p><a href="./pages/Plantas.html">Plantas</a></p>
-            <p><a href="./pages/Profissionais.html">Profissionais</a></p>
-            <p><a href="./pages/IndexSobre.html">Sobre</a></p>
-            <p><a href="./pages/Contato.html">Contato</a></p>
+                <div class="inf">
+                    <h3>ATENDIMENTO</h3>
+                        <p> (00) 00000-0000 </p>
+                        <p> arqplantas@gmail.com.br</p>
+                        <p> Seg - Sex: 8h ás 18h</p>
+                        <p> São Paulo - SP</p>
+                </div>
 
-            <h3>CATEGORIAS</h3>
-            <p><a href="./pages/Casasterreas.html">Casas de terreas</a></p>
-            <p><a href="./pages/Sobrados.html">Sobrados</a></p>
-            <p><a href="./pages/Kitnets.html">Kitnets</a></p>
-            <p><a href="./pages/Casascampo.html">Casas de campo</a></p>
-            <p><a href="./pages/CasasModernas.html">Casas modernas</a></p>
-            <h3>ATENDIMENTO</h3>
-            <p><a href="./pages/Contato.html">Fale conosco</a></p>
-            <p><a href="./pages/FAQ.html">FAQ</a></p>
-            <h3>NEWSLETTER</h3>
-            <p> Receba Novidades, lançamentos e dicas esxlusivas.</p>
+                <div class="inf">
+                    <h3>NEWSLETTER</h3>
+                        <p> Receba Novidades, lançamentos e dicas exclusivas.</p>
 
-            <div class="Newsletter">
-                <input type="email" placeholder="Digite seu email">
-                <button class="btnEnviar">Enviar</button>
+                    <input type="email" placeholder="Digite seu email">
+                    <button class="btnEnviar">Enviar</button>
+                </div>
             </div>
 
-
-            <p> 2024 ARQPlantas. Todos os direitos reservados.</p>
-            <p><a href="./pages/PoliticaPrivacidade.html">Política de Privacidade</a></p>
-            <p><a href="./pages/TermosUso.html">Termos de Uso</a></p>
+            <div class="RodapeFim">
+                <p> 2024 ARQPlantas. Todos os direitos reservados.</p>
+                <a href="./pages/PoliticaPrivacidade.html">Política de Privacidade</a>
+                <a href="./pages/TermosUso.html">Termos de Uso</a>
+            </div>  
         </footer>
     </main>
 </body>

@@ -1,0 +1,277 @@
+/* ======= GERAL ======= */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* ======= CABEÇALHO ======= */
+header {
+    background: #ffffff;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+}
+
+/* ======= MENU ======= */
+.menu {
+    display: flex;
+    width: 60%;
+    height: 50px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+}
+
+.menu a {
+    flex: 1;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #555;
+}
+
+.menu a.ativo {
+    background: #949494;
+    color: white;
+}
+
+/* ======= CONTEUDO ======= */
+
+/* ======= TextoInicial ======= */
+.titulo-plantas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.texto {
+    margin-bottom: 20px;
+}
+
+.texto h1 {
+    color: #000000;
+}
+
+.texto p {
+    color: #888;
+}
+
+/* ======= SELETOR ======= */
+
+.ordenar {
+    margin-right: 50px;
+}
+.ordenar label {
+    color: #555;
+    font-size: 20px;
+}
+
+.ordenar select {
+    width: 150px;
+    height: 20px;
+    border-radius: 5px;
+    border-color: #555;
+    color: #555;
+}
+
+/* ======= FILTROS ======= */
+
+.plantas {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.filtro{
+    width: 250px;
+    background: #e6e6e6;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px;
+    margin-right: 20px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.filtro-topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.filtro-topo h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.filtro-topo a{
+    color: #888;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+.grupo{
+    padding: 5px;
+}
+
+.grupo h4{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333333;
+}
+
+.grupo label{
+    display: block;
+    color: #888;
+    margin-left: 20px;  
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.grupo input{
+    margin-right: 8px;
+}
+
+/* ======= CARDS DAS PLANTAS ======= */
+
+.plantas-container {
+    display: grid;
+    border-radius: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.planta-card img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.planta-card {
+    background-color: #dddddd;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 15px;
+}
+
+.planta-card h3 {
+    color: #555;
+    font-size: 15px;
+}
+
+.planta-card p {
+    color: #555;
+    font-size: 13px;
+}
+
+.planta-card a {
+    background-color: #7a8b63;
+    border-radius: 3px;
+    border-color: #dddddd;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 60px;
+}
+
+.planta-card a:hover {
+    color: #7a8b63;
+    background-color: #fff;
+    border-color: #dddddd;
+    border-width: 0;
+}
+
+/* ======= RODAPE ======= */
+
+.Rodape {
+    background-color: #e6e6e6;
+    padding: 5px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Rodape img {
+    width: 100px;
+    height: 80px;
+    margin-left: 50px;
+}
+
+.Rodape h2 {
+    color: #555;
+    font-size: 15px;
+    margin-left: 50px;
+}
+
+.inf h3 {
+    color: #7a8b63;
+    font-size: 18px;
+}
+.inf p {
+    color: #555;
+    font-size: 15px;
+}
+.inf a {
+    color: #555;
+    font-size: 15px;
+}
+
+.inf input {
+    background-color: #fff;
+    border-radius: 5px;
+    border-color: #e6e6e6;
+    border-width: 0;
+    padding: 10px 10px;
+}
+
+.inf button {
+    background-color: #7a8b63;
+    border-color: #7a8b63;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border-width: 0;
+    color: #fff;
+}
+
+.inf button:hover {
+    color: #7a8b63; 
+    background-color: #c9c9c9;
+}
+
+.RodapeFim {
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.RodapeFim p {
+    color: #8d8d8d;
+    font-size: 15px;
+    margin: 0;
+}
+
+.RodapeFim {
+    display: flex;
+    gap: 5px;
+}
+
+.RodapeFim a {
+    color: #8d8d8d;
+    text-decoration: none;
+}
+
+.RodapeFim a:hover {
+    color: white;
+}
