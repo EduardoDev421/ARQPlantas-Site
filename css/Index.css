@@ -80,7 +80,7 @@ header {
 }
 .btnVerPlantas {
     background-color: #7a8b63;
-    border-color: #fff;
+    border-color: #7a8b63;   
     border-radius: 5px;
     border-width: 1px;
     padding: 10px 20px;
@@ -130,8 +130,9 @@ header {
 .sobre {
     display: flex;
     background-color: #ffffff;
-    padding: 50px;
+    padding: 40px 10px;
     gap: 40px;
+    justify-content: center;
 }
 
 .sobre h1 {
@@ -220,8 +221,8 @@ header {
 
 .Card-Valores img {
     width: 100%;
-    max-width: 60px;
-    height: 60px;
+    max-width: 120px;
+    height: auto;
     object-fit: contain;
     margin-bottom: 15px;
     display: block;
@@ -248,6 +249,7 @@ header {
 .Fazemos {
     background-color: #e6e6e6;
     display: flex;
+    justify-content: center;
 }
 
 .Fazemos h2,h3 {
@@ -358,7 +360,7 @@ header {
 
 .RetanguloNossoSite h2 {
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     margin: 0;
 }
 

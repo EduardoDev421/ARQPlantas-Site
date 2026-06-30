@@ -1,0 +1,190 @@
+/* ======= GERAL ======= */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* ======= CABEÇALHO ======= */
+header {
+    background: #ffffff;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+}
+
+/* ======= MENU ======= */
+.menu {
+    display: flex;
+    width: 60%;
+    height: 50px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+}
+
+.menu a {
+    flex: 1;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #555;
+}
+
+.menu a.ativo {
+    background: #949494;
+    color: white;
+}
+
+/* ======= CONTEUDO ======= */
+
+.profissionais {
+    padding: 80px 20px;
+}
+
+.profissionais h1,h2,h3 {
+    margin-left: 100px;
+}
+
+.profissionais h2 {
+    font-size: 13px;
+    color: #54643d;
+}
+
+.profissionais h1 {
+    font-size: 30px;
+    color: #333;
+}
+
+.profissionais h3 {
+    font-size: 13px;
+    color: #555;
+}
+
+.profissionais img {
+    width: 100%;
+    max-width: 100px;
+    display: flex;
+    justify-content: end;
+}
+
+.btnProfissionais {
+    color: #fff;
+    font-size: 15px;
+    background-color: #54643d;
+    border-color: #54643d;
+    border-radius: 5px;
+    border-width: 0;
+    padding: 10px 60px;
+    margin-left: 100px;
+    text-decoration: none;
+}
+
+/* ======= VANTAGENS ======= */
+
+.vantagens {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #e6e6e6;
+}
+
+.vantagens h2 {
+    color: #54643d;
+    font-size: 15px;
+}
+
+.vantagens h1 {
+    color: #333;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.vantagens-cards {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card {
+    width: 250px;
+    padding: 20px 50px;
+    background-color: #bababe93;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 70px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #54643d;
+}
+
+.card p {
+    text-align: center;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+}
+/* ======= COMO FUNCIONA ======= */
+
+.ComoFunciona {
+    background-color: #e6e6e6;
+    display: flex;
+    flex-direction: column;
+}
+
+.ComoFunciona h3 {
+    color: #54643d;
+    font-size: 15px;
+}
+
+.ComoFunciona h2 {
+    color: #333;
+    font-size: 30px 
+}
+
+.FuncionaEtapas {
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.etapa h3 {
+    color: #54643d;
+    font-size: 20px;
+}
+
+.etapa p {
+    color: #666;
+    font-size: 13px;
+    text-align: center;
+    padding: 0px 50px;
+}
+
+.Mensagem {
+    background-color: #fff;
+    display: grid;
+    justify-self: centerw ;
+}
+
+.btnCadastrar a {
+    background-color: #54643d;
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+    border-color: #fff;
+    border-width: 0;
+    border-radius: 5px;
+    padding: 10px;
+}
